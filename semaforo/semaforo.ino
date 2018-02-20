@@ -1,6 +1,11 @@
 /*
  *Autor: Cristian Josafat Flores Ramirez
  *
+ *Semaforo vehicular y peatonal con un pulsador para ceder el paso
+ *al peaton y detener los automoviles, auxiliado con un poteciometro
+ *para dar tiempo de alto en los autos
+ *
+ *licencia GNU General Public License (GNU GPL)
  */
 
 
