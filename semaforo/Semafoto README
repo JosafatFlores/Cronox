@@ -1,0 +1,40 @@
+Titulo de proyecto:
+Semaforo vehicular y peatonal.
+
+Emepezando:
+El codigo se encuentra documentado linea por linea y los fragmentos de codigo 
+y su funcion.
+
+Requisitos previos:
++Contar con una pc con Arduino IDE.
++Arduino.
++Material para desarrollar la practica.
++Conocimientos de Circuitos y programacion.
+
+Ejecucion:
+Reaalizar el circuito con los 2 semaforos, boton, potenciomentro de la 
+manera correcta, enseguida abrir el codigo en Arduino IDE, conectar 
+nuestro arduino, seleccionar la placa y puerto correspondiente y por 
+ultimo cargar el codigo a el Arduino.
+
+Ejecutando pruebas:
+Alimentar con corriente electrica el Arduino y el circuito, presionar el 
+boton, verificar el cambio de el semaforo y tambien cambiar valor del 
+potenciometro para cmabiar la durabilidad.
+
+Analisis de pruebas:
+Mientras el desarrollo de este software nos encontramos con el problema
+de cargar el codigo a nuestra placa Arduino mientras se utilizaba el 
+puerto 0 y 1, se encontro como solucion en internet, donde se menciona
+el uso de esos puertos al momento de cargar el codigo y como consecuencia 
+conflictos de funcionabilidad.	
+
+Autor:
+Cristian Josafat Flores Ramirez
+
+Licencia:
+Este proyecto cuenta con licencia GNU General Public License (GNU GPL)
+
+Expresiones de gratitud:
+Este proeyecto quiero agradecer a mi profesor de la materia Sistemas 
+Programables Ing. Levy Rojas Carlos Rafael
