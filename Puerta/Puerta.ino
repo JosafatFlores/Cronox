@@ -1,11 +1,11 @@
-/ *
- * Autor: Cristian Josafat Flores Ramirez
+/*
+ *Autor: Cristian Josafat Flores Ramirez
  *
  *Puerta que al estar abierta emite una luz
  *y cuanta las veces que se abrio con la ayuda de
  *reed switch, sensor magnetico
  * Licencia GNU General Public License (GNU GPL)
- * /
+ */
     
 #include <avr/sleep.h>                    //Se utiliza la libreria sleep
     
@@ -17,6 +17,9 @@ int contador = 0;                         //Variable para contar cuanta veces ah
 //Metodp para para quitar el modo sleep del arduino
 void despertar (){
   sleep_disable();                         //desactiva el modos sleep del arduino
+    contador ++;                               //Incrementa en 1 el contador
+  Serial.print(contador);                    //Imprime el contador en la consola
+  Serial.print("\n");                        //Salto de linea en consola
   detachInterrupt (2);                     //Desactiva la interrupcion
 } 
 
@@ -35,13 +38,11 @@ void setup (){
     
 void loop(){
   if (digitalRead(contacto)==HIGH){          //Se envia un pulso alto al contacto
-  contador ++;                               //Incrementa en 1 el contador
-  Serial.print(contador);                    //Imprime el contador en la consola
-  Serial.print("\n");                        //Salto de linea en consola
-  digitalWrite(led,LOW);                     //Apaga el led
+
+  digitalWrite(led,HIGH);                     //Apaga el led
          
   }else{
-     digitalWrite(led,HIGH);                 //Enciende el led
+     digitalWrite(led,LOW);                 //Enciende el led
   }
 }
 
